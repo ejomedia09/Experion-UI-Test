@@ -1,0 +1,70 @@
+[
+    {
+        "Name": "Bond Street By Red Tape Remixa Sneakers", 
+        "Category": "Men Crater Remixa Sneakers",
+        "Price":"Rs.5467",
+        "Image": "images/product-1.jpg"
+    },
+  
+    {
+        "Name": "Puma", 
+        "Category": "Men Crater Remixa Sneakers",
+        "Price":"Rs.6499",
+        "Image": "images/product-2.jpg"
+    },
+  
+    {
+        "Name": "Vero Moda", 
+        "Category": "Women Crater Remixa Sneakers",
+        "Price":"Rs.2767",
+        "Image": "images/product-3.jpg"
+    },
+  
+    {
+        "Name": "Carnatia W Running Shoes For Women", 
+        "Category": "Men Crater Remixa Sneakers",
+        "Price":"Rs.3734",
+        "Image": "images/product-4.jpg"
+    },
+  
+    {
+        "Name": "Vero Moda", 
+        "Category": "Women Black Solid One Dri-Fit Tights",
+        "Price":"Rs.5467",
+        "Image": "images/product-5.jpg"
+    },
+  
+    { 
+        "Name": "WROGN", 
+        "Category": "Women Crater Remixa Sneakers",
+        "Price":"Rs.2767",
+        "Image": "images/product-6.jpg"
+    },
+  
+    { 
+        "Name": "ADIDAS", 
+        "Category": "Men Crater Remixa Sneakers",
+        "Price":"Rs.3734",
+        "Image": "images/product-7.jpg"
+    },
+  
+    { 
+        "Name": "Mast &Harbour", 
+        "Category": "Women Crater Remixa Sneakers",
+        "Price":"Rs.2767",
+        "Image": "images/product-8.jpg"
+    },
+    { 
+        "Name": "Vero Moda", 
+        "Category": "Women Crater Remixa Sneakers",
+        "Price":"Rs.2767",
+        "Image": "images/product-3.jpg"
+    },
+  
+    { 
+        "Name": "Carnatia W Running Shoes For Women", 
+        "Category": "Men Crater Remixa Sneakers",
+        "Price":"Rs.3734",
+        "Image": "images/product-4.jpg"
+    }
+]

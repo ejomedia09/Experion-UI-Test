@@ -1,0 +1,278 @@
+$color_1: #0F42DF;
+$color_2: #fff;
+$color_3: #041131;
+$color_4: #1750FF;
+$font-family_1: Roboto-Regular;
+$background-color_1: #fff;
+$background-color_2: #0F42DF;
+$background-color_3: transparent;
+$background-color_4: #323F39;
+$background-color_5: #005EBB;
+$background-color_6: #FE9898;
+
+@mixin button-default-style {		/* Mixin for buttons */
+	font-family: $font-family_1;
+	font-style: normal;
+	cursor: pointer;
+	text-decoration: none;
+}
+.scrollbar::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: $color_2;
+}
+.scrollbar::-webkit-scrollbar{
+	width: 10px;
+	background-color: $color_2;
+}
+.scrollbar::-webkit-scrollbar-thumb{
+	background-color: $color_1;
+	border: 2px solid #555555;
+}
+.filter-wrapper {
+	font-family: $font-family_1;
+	display: flex;
+	align-items: stretch;
+	margin-top: 25px;
+}
+.clear-btn {
+	@include button-default-style;
+	font-weight: 500;
+	font-size: 17px;
+	color: $color_1;
+	border: none;
+	background-color: $background-color_1;
+}
+.filter-btn {
+	@include button-default-style;
+	color: $color_1;
+	border: 2px solid #0F42DF;
+	border-radius: 6px;
+	padding: 10px 26px;
+	font-size: 17px;
+	margin-left: 20px;
+	background-color: $background-color_1;
+	&:hover {
+		background-color: $background-color_2;
+		color: $color_2;
+	}
+}
+.col-divide-2 {
+	margin: 10px 10px;
+	flex: 50%;
+	align-items: center;
+	justify-content: end;
+	height: max-content;
+	border-radius: 4px;
+}
+.filter {
+	height: max-content;
+	min-height: 117px;
+	display: flex;
+}
+.filter-key-list {
+	display: block;
+	float: left;
+	width: 100%;
+	h2 {
+		display: block;
+		float: left;
+		width: 100%;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 16px;
+		color: $color_3;
+		opacity: 0.9;
+	}
+}
+ul.filter-key {
+	list-style: none;
+	display: inline-block;
+	padding-left: 0px;
+	margin-top: 0;
+	li {
+		background: #E8E8FF;
+		color: $color_3;
+		border-radius: 6px;
+		padding: 12px 14px;
+		float: left;
+		margin: 5px 5px 5px 5px;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		img {
+			padding-left: 22px;
+			cursor: pointer;
+		}
+	}
+}
+.cart {
+	img {
+		margin-right: 20px;
+	}
+}
+.user {
+	.dropbtn {
+		img {
+			position: absolute;
+			left: 0px;
+			top: 6px;
+		}
+		span {
+			display: block;
+			margin-left: 30px;
+		}
+	}
+}
+.shadow {
+	background: #0f255fb8;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	right: 0;
+}
+.filter-right-panel {
+	background: #FFF;
+	position: fixed;
+	height: 100vh;
+	width: 35%;
+	top: 0;
+	z-index: 9999;
+	right: -100%;
+	padding: 35px;
+}
+.showPanel {
+	right: 0%;
+}
+.close-panel {
+	cursor: pointer;
+	position: absolute;
+	left: -15px;
+	background-color: $background-color_1;
+	padding: 6px 12px;
+	border-radius: 18px;
+	top: 15px;
+}
+.col {
+	width: 50%;
+	float: left;
+}
+.panel-row {
+	input[type=checkbox] {
+		@include button-default-style;
+		margin-bottom: 12px;
+	}
+}
+.panel-wraper {
+	overflow-y: scroll;
+	height: 76vh;
+	margin-bottom: 20px;
+}
+.more-items {
+	#more {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		color: $color_4;
+		background-color: $background-color_3;
+		border: none;
+		margin-top: 7px;
+		cursor: pointer;
+	}
+}
+.panel-row.Colors {
+	button {
+		display: block;
+		margin-bottom: 15px;
+		border: none;
+		background-color: $background-color_3;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 16px;
+		color: $color_3;
+		opacity: 0.8;
+	}
+}
+span.color-box {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	border-radius: 50px;
+	margin-right: 10px;
+	margin-top: 0px;
+	border: 1px solid #ddd;
+}
+span.color-box.black-clr {
+	background-color: $background-color_4;
+}
+span.color-box.white-clr {
+	background-color: $background-color_1;
+}
+span.color-box.blue-clr {
+	background-color: $background-color_5;
+}
+span.color-box.pink-clr {
+	background-color: $background-color_6;
+}
+.action-btn-wrapper {
+	position: absolute;
+	width: 85%;
+}
+button.clearall-btn {
+	@include button-default-style;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 18px rgb(0 0 0 / 16%);
+	border: navajowhite;
+	padding: 15px 30px;
+	width: 50%;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: $color_3;
+}
+button.apply-btn {
+	@include button-default-style;
+	background: $background-color_2;
+	box-shadow: 0px 4px 18px rgb(0 0 0 / 16%);
+	border: none;
+	padding: 15px 30px;
+	width: 50%;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: $color_2;
+}
+span.count {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: $color_3;
+	opacity: 0.5;
+	padding-left: 5px;
+}
+@media (max-width:767px) {
+	.col {
+		width: 100%;
+		float: left;
+	}
+	button.clearall-btn {
+		width: auto;
+	}
+	button.apply-btn {
+		width: auto;
+	}
+}
+@media (max-width:1190px) {
+	.filter-right-panel {
+		width: 85%;
+		height: 100%;
+	}
+	.shadow {
+		height: 100%;
+	}
+}
